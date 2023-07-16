@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Mart Real-Time Stock Updates</title>
+
+    <link rel="stylesheet" href="messaging.css">
+</head>
+<body>
+    <h3>LOG IN</h3>
+    <p>(Log in with ADMIN account for test the real-time updates, and make sure the server is running in your local machine 1st)</p>
+
+    <form id="login-form">
+        <input value="Somi" type="text" name="username" id="username" placeholder="username"><br>
+        <input value="12345678" type="text" name="password" id="password" placeholder="password"><br>
+        <input type="submit">
+    </form>
+
+    <br>
+
+    <h3>Updates Here</h3>
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Product Name</th>
+            <th>No of Stock</th>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                <td>1</td>
+                <td>Bag</td>
+                <td>10</td>
+            </tr> -->
+        </tbody>
+    </table>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</html>
+<script src="messaging.js"></script>

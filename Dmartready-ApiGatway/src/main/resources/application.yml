@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: DMART-STORE-SERVICE
+        uri: lb://DMART-STORE-SERVICE
+        predicates:
+        - Path=/store-service-api/**
+      
+      - id: DMART-PRODUCT-SERVICE
+        uri: lb://DMART-PRODUCT-SERVICE
+        predicates:
+        - Path=/product-service-api/**
+        
+      - id: DMART-USER-SERVICE
+        uri: lb://DMART-USER-SERVICE
+        predicates:
+        - Path=/user-service-api/**
+        
+      - id: DMART-MESSAGING-SERVICE
+        uri: lb://DMART-MESSAGING-SERVICE
+        predicates:
+        - Path=/messaging-service-api/**
