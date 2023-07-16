@@ -57,4 +57,15 @@ I have used the Swagger for the API Documenetation
   - On login you will get JwtToken which must be stored with extra care and safty.
   - Use this token for any API call.
   - Token's validation is only 8hrs then after it will be invalidated.
+* Port Number Details
+  - Service Registry: `8761`
+  - API Getway: `8080`
+  - Store service: `8081`
+  - Product service: `8082`
+  - User service: `8083`
+  - Messaging service: `8084`
 * Now you are ready to go...
+
+
+
+#### Thank you for visiting, have a bug free day ahead :>
